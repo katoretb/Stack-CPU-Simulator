@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa; /* Light background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+.navbar {
+    background-color: #111112; /* Dark background for the navbar */
+    padding: 0.5rem 1rem; /* Add padding to navbar */
+}
+.navbar .nav-link {
+    color: #ffffff; /* Default link color */
+}
+.navbar .nav-link:hover {
+    color: #d1d1d1; /* Hover link color */
+}
+.btn-dark {
+    color: #ffffff; /* Button text color */
+    background-color: #343a40; /* Button background color */
+    border: none; /* Remove border */
+}
+.btn-dark:hover {
+    background-color: #495057; /* Button hover background */
+    color: #ffffff; /* Button hover text color */
+}
+.navbar-brand {
+    color: #ffffff; /* Navbar brand text color */
+}
+.navbar-brand:hover {
+    color: #ffffff; /* Navbar brand text color */
+}
+.navbar-toggler {
+    border: none; /* Remove border from toggler button */
+}
+.navbar-toggler-icon {
+    background-color: #ffffff; /* White icon color */
+}
+@media (max-width: 576px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: center; /* Center align content */
+        align-items: center; /* Center align items vertically */
+        margin-top: 10px; /* Optional: add some space at the top */
+    }
+    .btn-margin {
+        margin: 0 auto; /* Center align button */
+    }
+}
+.navbar .nav-link.active {
+    color: rgb(143, 143, 143);
+    font-weight: normal;
+}
