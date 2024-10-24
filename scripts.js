@@ -379,6 +379,10 @@ function inkeydown(i) {
             sysF.Memo[i] = input.value
             LoadM()
         }
+        if(input.value.trim() == ""){
+            sysF.Memo.splice(i, 1)
+            LoadM()
+        }
     }
 };
 
