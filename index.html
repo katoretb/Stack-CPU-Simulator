@@ -40,13 +40,19 @@
         </nav>
         <br>
         <div id="sim">
-            <button id="runbut" type="button" class="btn btn-primary" onclick="Run()" style="margin-left: 1rem;">Run</button>
-            <button id="stpbut" type="button" class="btn btn-secondary" onclick="Step()">Step</button>
-            <button id="stobut" type="button" class="btn btn-warning" onclick="Stop()">Stop</button>
-            <button id="rstbut" type="button" class="btn btn-danger" onclick="reset()">Reset</button>
-            <button id="clrbut" type="button" class="btn btn-outline-danger" style="margin-left: 4rem;" onclick="resetall()">Reset and Clear</button>
-            <button type="button" class="btn btn-success" onclick="saveMemoryOptionsToFile()">Save file</button>
-            <button type="button" class="btn btn-secondary" id="load-from-file-button">Load file</button>
+            <div class="row" style="margin-left: 1rem;">
+                <div class="col-sm-3" style="padding: 0.5rem;">
+                    <button id="runbut" type="button" class="btn btn-primary" onclick="Run()">Run</button>
+                    <button id="stpbut" type="button" class="btn btn-secondary" onclick="Step()">Step</button>
+                    <button id="stobut" type="button" class="btn btn-warning" onclick="Stop()">Stop</button>
+                    <button id="rstbut" type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+                </div>
+                <div class="col-sm" style="padding: 0.5rem;">
+                    <button id="clrbut" type="button" class="btn btn-outline-danger" onclick="resetall()">Reset and Clear</button>
+                    <button type="button" class="btn btn-success" onclick="saveMemoryOptionsToFile()">Save file</button>
+                    <button type="button" class="btn btn-secondary" id="load-from-file-button">Load file</button>
+                </div>
+            </div>
             <input type="file" id="file-input" accept="application/JSON" style="display: none;">
             <br>
             <br>
